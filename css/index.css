@@ -145,7 +145,6 @@ header h1 {
   justify-content: center;
 }
 .links {
-  background: #864747;
   display: flex;
   justify-content: space-around;
 }
@@ -162,9 +161,11 @@ header h1 {
   padding: 1%;
   border: 1px solid;
 }
-.call-to-action {
-  border: 1px solid;
+img {
+  display: flex;
   margin: 1%;
+  width: 98%;
+  height: 1%;
 }
 .portfolio {
   border: 1px solid;
@@ -184,4 +185,25 @@ header h1 {
   border: 1px solid;
   margin-top: 1%;
   width: 50%;
+}
+.input {
+  background-color: #CD5C5C;
+  border: 1px solid;
+  margin: 1%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.input h2 {
+  font-size: 1.5rem;
+  margin: 1%;
+}
+.input p {
+  margin-left: 1%;
+}
+.input .name {
+  border: 1px solid;
+  height: 50px;
+  margin: 1%;
+  background-color: white;
 }
