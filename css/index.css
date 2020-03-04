@@ -162,3 +162,7 @@ header h1 {
   padding: 1%;
   border: 1px solid;
 }
+.call-to-action {
+  border: 1px solid;
+  margin: 1%;
+}
