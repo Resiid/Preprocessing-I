@@ -166,3 +166,22 @@ header h1 {
   border: 1px solid;
   margin: 1%;
 }
+.portfolio {
+  border: 1px solid;
+  margin: 1%;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio h2 {
+  font-size: 1.5rem;
+}
+.portfolio .great {
+  border: 1px solid;
+  width: 50%;
+}
+.portfolio .response {
+  border: 1px solid;
+  margin-top: 1%;
+  width: 50%;
+}
