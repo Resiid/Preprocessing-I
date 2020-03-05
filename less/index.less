@@ -54,6 +54,17 @@ table {
     box-sizing: border-box;
 }
 
+@text-color:#CD5C5C;
+@hover: #77DD77;
+@size: 1.5rem;
+
+
+.display-property(){
+	display: flex;
+	flex-direction: column
+}
+
+
 html, body {
     height: 100%;
 }
@@ -61,7 +72,7 @@ html, body {
 // code goes here
 
 header { 
-	border: 1px solid;
+	border-bottom: 1px solid @hover;
 	margin: 1%;
 
 	h1 {
@@ -69,11 +80,9 @@ header {
 		display: flex;
 		flex-direction: start;
 		justify-content: center;
+		color: #19b7d5;
 	}
 }
-
-
-
 
 
 .links {
@@ -81,19 +90,25 @@ header {
 	justify-content: space-around;
 	
 	a {
-	border: 1px solid;
 	margin: .5%;
 	padding: .5%;
 	font-size: 1.2rem;
-	color: #CD5C5C;	
+	color:@text-color;	
 	text-decoration: none;
+	}
+
+	a:hover {
+		color:@hover;
 	}
 }
 
 .about {
 	margin: 1%;
 	padding: 1%;
-	border: 1px solid;
+
+	h2 {
+		font-size:@size;
+	}
 }
 
 img {
@@ -103,51 +118,92 @@ img {
 	height: 1%;
 }
 
-.portfolio {
-	border: 1px solid;
+.portfolio-box {
 	margin: 1%;
 	padding: 1%;
-	display: flex; 
-	flex-direction: column;
+	.display-property
 
 	h2 {
-		font-size: 1.5rem;
+		font-size: @size;
 	}
 
 	.great {
-		border: 1px solid;
+		border: 1px solid @hover;
 		width: 50%;
+		padding: 1%;
 	}
 
 	.response {
-		border: 1px solid;
+		border: 1px solid @hover;
 		margin-top: 1%;
 		width: 50%;
+		padding: 1%;
 	}
+
+	
 }
 
 .input {
-	background-color: #CD5C5C;
-	border: 1px solid;
-	margin: 1%;
-	display: flex;
-	justify-content: space-evenly;
-	flex-direction: column;
-
+	background-color:#CD5C5C;
+	margin: 2%;
+	width: 40%;
+	.display-property();
+	
 	h2 {
-		font-size: 1.5rem;
-		margin: 1%;
+		background-color: #CD5C5C;
+		font-size: @size;
+		padding: 3%;
+		text-align: center;
 	}
 
 	p {
+		padding-left: 3%;
+		background-color: @text-color;
+	}
 
-		margin-left: 1%;
+	.external-contact{
+		background-color:@text-color;
+	}
+
+	.email-box {
+		background-color: @text-color;
 	}
 
 	.name {
-		border: 1px solid;
 		height: 50px;
-		margin: 1%;
+		margin: 3%;
+		width: 90%;
 		background-color: white;
+
+	.button {
+		display: flex;
+		justify-content: center;
 	}
+	}
+}
+
+.footer { 
+	margin: 1%;
+
+	h3 {
+		padding: 1%;
+		font-size: @size;
+	}
+}
+
+.info { 
+	padding-left: 1%;
+
+	li{
+		padding: .5%;
+	
+		a{
+			color:@text-color;
+			text-decoration: none;
+		}
+	}
+}
+
+a:hover {
+	color:@hover;
 }

@@ -136,7 +136,7 @@ body {
   height: 100%;
 }
 header {
-  border: 1px solid;
+  border-bottom: 1px solid #77DD77;
   margin: 1%;
 }
 header h1 {
@@ -144,23 +144,28 @@ header h1 {
   display: flex;
   flex-direction: start;
   justify-content: center;
+  color: #19b7d5;
 }
 .links {
   display: flex;
   justify-content: space-around;
 }
 .links a {
-  border: 1px solid;
   margin: 0.5%;
   padding: 0.5%;
   font-size: 1.2rem;
   color: #CD5C5C;
   text-decoration: none;
 }
+.links a:hover {
+  color: #77DD77;
+}
 .about {
   margin: 1%;
   padding: 1%;
-  border: 1px solid;
+}
+.about h2 {
+  font-size: 1.5rem;
 }
 img {
   display: flex;
@@ -168,43 +173,74 @@ img {
   width: 98%;
   height: 1%;
 }
-.portfolio {
-  border: 1px solid;
+.portfolio-box {
   margin: 1%;
   padding: 1%;
-  display: flex;
-  flex-direction: column;
 }
-.portfolio h2 {
+.portfolio-box .display-property h2 {
   font-size: 1.5rem;
 }
-.portfolio .great {
-  border: 1px solid;
+.portfolio-box .great {
+  border: 1px solid #77DD77;
   width: 50%;
+  padding: 1%;
 }
-.portfolio .response {
-  border: 1px solid;
+.portfolio-box .response {
+  border: 1px solid #77DD77;
   margin-top: 1%;
   width: 50%;
+  padding: 1%;
 }
 .input {
   background-color: #CD5C5C;
-  border: 1px solid;
-  margin: 1%;
+  margin: 2%;
+  width: 40%;
   display: flex;
-  justify-content: space-evenly;
   flex-direction: column;
 }
 .input h2 {
+  background-color: #CD5C5C;
   font-size: 1.5rem;
-  margin: 1%;
+  padding: 3%;
+  text-align: center;
 }
 .input p {
-  margin-left: 1%;
+  padding-left: 3%;
+  background-color: #CD5C5C;
+}
+.input .external-contact {
+  background-color: #CD5C5C;
+}
+.input .email-box {
+  background-color: #CD5C5C;
 }
 .input .name {
-  border: 1px solid;
   height: 50px;
-  margin: 1%;
+  margin: 3%;
+  width: 90%;
   background-color: white;
+}
+.input .name .button {
+  display: flex;
+  justify-content: center;
+}
+.footer {
+  margin: 1%;
+}
+.footer h3 {
+  padding: 1%;
+  font-size: 1.5rem;
+}
+.info {
+  padding-left: 1%;
+}
+.info li {
+  padding: 0.5%;
+}
+.info li a {
+  color: #CD5C5C;
+  text-decoration: none;
+}
+a:hover {
+  color: #77DD77;
 }
